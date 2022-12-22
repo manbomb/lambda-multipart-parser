@@ -1,4 +1,4 @@
-declare module "lambda-multipart-parser" {
+declare module "@manbomb/lambda-multipart-parser" {
     import {
         APIGatewayProxyEventV2
     } from "aws-lambda"
