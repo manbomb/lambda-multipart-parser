@@ -1,6 +1,6 @@
 declare module "lambda-multipart-parser" {
     import {
-        APIGatewayProxyEvent,
+        APIGatewayProxyEventV2
     } from "aws-lambda"
 
     interface MultipartFile {
@@ -13,5 +13,5 @@ declare module "lambda-multipart-parser" {
 
     type MultipartRequest = { files: MultipartFile[] } & Record<string, string>
 
-    export function parse (event: APIGatewayProxyEvent): Promise<MultipartRequest>
+    export function parse (event: APIGatewayProxyEventV2): Promise<MultipartRequest>
 }
