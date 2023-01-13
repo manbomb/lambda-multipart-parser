@@ -1,6 +1,6 @@
 {
     "name": "@manbomb/lambda-multipart-parser",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "This module will parse the multipart-form containing files and fields from the lambda event object.",
     "main": "index.js",
     "author": "francismeynard,manbomb",
@@ -24,7 +24,7 @@
         "multipart/formdata"
     ],
     "dependencies": {
-        "busboy": "^0.3.0"
+        "busboy": "0.3.0"
     },
     "devDependencies": {
         "chai": "^3.5.0",
